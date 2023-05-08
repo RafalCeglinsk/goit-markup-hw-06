@@ -703,8 +703,8 @@
 						<input
 							type="text"
 							name="firstname"
-							id="name"
 							class="input-box"
+							id="name"
 						/>
 					</label>
 					<label class="contact-form" for="phone">Telefon</label>
@@ -745,8 +745,8 @@
 							class="input-box"
 						/>
 					</label>
-					<label class="contact-form">Komentarz</label>
-					<label>
+					<label class="contact-form" for="comment">Komentarz</label>
+					<label class="contact-form-box">
 						<input
 							type="text"
 							name="comment"
@@ -754,11 +754,26 @@
 							class="comment-input-box"
 						/>
 					</label>
+					<label class="checkbox-container">
+						<input type="checkbox" id="checked" />
+						<span class="checkmark">
+							<svg width="11" height="8" class="checkmark-svg">
+								<use
+									href="./images/icons.svg#icon-Vector5"
+								></use>
+							</svg>
+						</span>
+					</label>
+					<div class="agreement">
+						Oświadczam iż akceptuję
+						<a href="#">Regulamin</a>
+						i
+						<a href="#">Politykę Prywatności.</a>
+					</div>
+					<button type="submit" class="button-form">
+						<p class="button-send">Wyślij</p>
+					</button>
 				</form>
-				<label class="checkbox-container">
-					<input type="checkbox" id="checked" />
-					<span class="checkmark"></span>
-				</label>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
