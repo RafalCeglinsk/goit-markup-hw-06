@@ -42,6 +42,7 @@ img {
 	--contact-icon-color-grey: rgba(117, 117, 117, 1);
 	--customers-border-grey: rgba(175, 177, 184, 1);
 	--project-description-hover: rgba(33, 150, 243, 0.9);
+	--modal-color-white: #ffffff;
 }
 a {
 	text-decoration: none;
@@ -301,7 +302,7 @@ ul {
 	width: 528px;
 	height: 582px;
 	border-radius: 4px;
-	background-color: var(--background-color-white);
+	background-color: var(--modal-color-white);
 	position: fixed;
 	z-index: 2;
 	transition-property: visibility, opacity, transform;
@@ -734,12 +735,11 @@ address {
 	width: 16px;
 	height: 15px;
 	fill: var(--background-color-white);
-	user-select: none;
 	cursor: pointer;
 }
 .checkbox-container input:checked + .checkmark {
 	background-color: var(--background-color-blue);
-	border: none;
+	border: 0;
 	fill: white;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -828,6 +828,7 @@ address {
 	margin-left: 44px;
 	margin-top: -4px;
 	color: var(--text-color-grey);
+	user-select: none;
 }
 .button-form {
 	display: flex;
@@ -838,6 +839,8 @@ address {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	margin: 30px 134px;
+	border: 0;
+	cursor: pointer;
 }
 .button-send {
 	font-family: "Roboto";
@@ -886,4 +889,11 @@ address {
 .comment-input-box:focus {
 	border-color: var(--border-color-blue);
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.newsletter-mail input:focus {
+	border-color: var(--border-color-blue);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy {
+	color: rgba(33, 150, 243);
 }
